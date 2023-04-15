@@ -1,0 +1,126 @@
+.threesixty img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.threesixty-frame {
+  margin: 0 auto;
+  width: 100%;
+  max-height: 91.5vh;
+  object-fit: cover;
+}
+.z-min-1 {
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .md\:rounded-r-xl {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  .md\:rounded-l-xl {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+}
+.bg-black-1 {
+  background-color: #000;
+}
+.bg-grey-1 {
+  background-color: #4C5253;
+}
+.hide-scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.bg-brown {
+  background-color: #613B1F;
+}
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 44px solid #E60012;
+  border-color: #E60012 transparent #E60012 transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+#loader > img.mitsubishi {
+  -webkit-animation: blink-2 0.7s infinite both;
+	        animation: blink-2 0.7s infinite both;
+}
+@-webkit-keyframes blink-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+#loader {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  /* top: 50%; */
+  top: 50vh;
+  margin-top: -50px;
+}
+.transition { transition: all .3s ease; }
+
+.w-28 {
+  width: 7rem;
+}
+.w-32 {
+  width: 8rem;
+}
+.w-40 {
+  width: 10rem;
+}
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+.rounded-l-1 {
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
